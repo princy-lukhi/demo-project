@@ -40,7 +40,7 @@ const arr = [
 
 const getData = (req, res) => {
     try {
-        console.log("get api is call");
+        console.log("called get api of crud");
         return res.status(200).json({ data: arr, message: "data get successfully" })
     } catch (error) {
         console.log(error);
