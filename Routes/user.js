@@ -6,7 +6,8 @@ router.get('/get' , getData)
 router.post('/add' , addData)
 router.patch('/update' , updateData)
 router.delete('/delete' , deleteData)
-router.post('/login' , login , verify)
+router.post('/login' , login)
+router.post('/verify' , verify)
 
 
 module.exports = router
