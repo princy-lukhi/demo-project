@@ -51,6 +51,7 @@ const addData = (req, res) => {
         const count = arr[arr.length - 1].id + 1;
         arr.push({ ...req.body, id: count })
         const index = arr.findIndex((value) => value.id == count);
+        console.log('add api is calling :>> ');
         res.status(200).json({ data: arr[index], message: "data add successfully" })
     } catch (error) {
         console.log(error);
