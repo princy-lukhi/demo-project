@@ -40,6 +40,10 @@ const arr = [
 
 const getData = (req, res) => {
     try {
+<<<<<<< HEAD
+=======
+        console.log("api calling");
+>>>>>>> feature-A
         return res.status(200).json({ data: arr, message: "data get successfully" })
     } catch (error) {
         console.log(error);
@@ -50,6 +54,7 @@ const addData = (req, res) => {
     try {
         const count = arr[arr.length - 1].id + 1;
         arr.push({ ...req.body, id: count })
+        console.log("add data api s called");
         const index = arr.findIndex((value) => value.id == count);
         res.status(200).json({ data: arr[index], message: "data add successfully" })
     } catch (error) {
