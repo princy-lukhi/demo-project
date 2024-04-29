@@ -40,10 +40,7 @@ const arr = [
 
 const getData = (req, res) => {
     try {
-<<<<<<< HEAD
-=======
         console.log("api calling");
->>>>>>> feature-A
         return res.status(200).json({ data: arr, message: "data get successfully" })
     } catch (error) {
         console.log(error);
